@@ -4,70 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/main.css">
     <title>Cabot Cruizes</title>
 </head>
 <body>
     <header>
-        <div class="upperHeader">
-            <img src="https://via.placeholder.com/150">
+        <div class="wrapper1200">
+            <!-- <img src="https://via.placeholder.com/150"> -->
+            <img src="./images/logo/logo@2x.png" alt="logo" class="logo">
             <div class="phone">1-800-555-1234</div>
         </div>
-        <nav>
+    </header>
+    <nav>
+        <div class="wrapper1200">
             <ul>
                 <li>Home</li>
                 <li>Cruises</li>
                 <li>Agents</li>
                 <li>Book</li>
             </ul>
-            <input type="text" id="searchBar">
-            <button>Search icon</button>
-        </nav>
-    </header>
-    
-    <div class="sliderArea">
-        <!-- Slider Area -->
-    </div>
-
-    <main class="articles">
-        <h2>Recent Blog Articles</h2>
-        <div class="article">
-            <div class="desc">
-
-            </div>
-            <div class="">
-                <p class="Date">May 1, 2018</p>
+            <div class="navSearch">
+                <input type="text" id="searchBar">
+                <button>Search</button>
             </div>
         </div>
-    </main>
+    </nav>
+
+    <div class="wrapper1200">
+        <div class="sliderArea">
+            <!-- Slider Area -->
+        </div>
+    
+        <main class="articleArea">
+            <h2>Recent Blog Articles</h2>
+
+            <div class="articles">
+                <div class="article">
+                    <div class="desc">Article title goes here and may also wrap two lines.</div>
+                    <div class="dateBox">
+                        <p class="date">May 1, 2021</p>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="desc">Article title goes here and may also wrap two lines.</div>
+                    <div class="dateBox">
+                        <p class="date">May 1, 2021</p>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="desc">Article title goes here and may also wrap two lines.</div>
+                    <div class="dateBox">
+                        <p class="date">May 1, 2021</p>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="desc">Article title goes here and may also wrap two lines.</div>
+                    <div class="dateBox">
+                        <p class="date">May 1, 2021</p>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+    
 
     <footer>
         <div class="mainFooter">
-            <div class="contactUs">
-                <h3>Contact Us</h3>
-                <p>Cabot Cruizes<br>
-                23 South Main St. Suite 16<br>
-                Lexington, VA 24450</p>
-                <h3>Phone</h3>
-                <p>1-800-555-1234</p>
-                <h3>Hours of Operation</h3>
-                <p>Monday - Friday 9am - 4pm</p>
-            </div>
-            <div class="newsletter">
-                <h3>News Letter</h3>
-                <p>Subscribe to our email list and stay up-to-date with our ho6est offers and latest specials.</p>
-                <form>
-                    <input type="text" id="newsletterSub">
-                    <input type="submit" value="submit">
-                </form>
-            </div>
-            <div class="why">
-                <h3>Why Cabot Cruises</h3>
-                <p>Cabot Cruises is a travel agency providing the best cruise deals on our online travel website. We can help you with all inclusive vacaMons including discounted cruises. We do not sell travel to residents of Delaware, Iowa, Florida, Hawaii and Washington state because those states are just wierd. If you are a resident of one of these states, call your congressman and tell them to change the regulations.</p>
+            <div class="wrapper1200">
+                <div class="contactUs">
+                    <h3>Contact Us</h3>
+                    <p>Cabot Cruizes<br>
+                    23 South Main St. Suite 16<br>
+                    Lexington, VA 24450</p>
+                    <h3>Phone</h3>
+                    <p>1-800-555-1234</p>
+                    <h3>Hours of Operation</h3>
+                    <p>Monday - Friday 9am - 4pm</p>
+                </div>
+                <div class="newsletter">
+                    <h3>News Letter</h3>
+                    <p>Subscribe to our email list and stay up-to-date with our hottest offers and latest specials.</p>
+                    <form>
+                        <input type="text" id="newsletterSub"><br>
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+                <div class="why">
+                    <h3>Why Cabot Cruises</h3>
+                    <p>Cabot Cruises is a travel agency providing the best cruise deals on our online travel website. We can help you with all inclusive vacaMons including discounted cruises. We do not sell travel to residents of Delaware, Iowa, Florida, Hawaii and Washington state because those states are just wierd. If you are a resident of one of these states, call your congressman and tell them to change the regulations.</p>
+                </div>
             </div>
         </div>
 
         <div class="footerIcons">
-            <!-- icons -->
+            <img src="./images/icons/logo-facebook.svg" alt="facebook logo" class="socialIcon">
+            <img src="./images/icons/logo-youtube.svg" alt="youtube logo" class="socialIcon">
+            <img src="./images/icons/logo-instagram.svg" alt="instagram logo" class="socialIcon">
+            <img src="./images/icons/logo-pinterest.svg" alt="pinterest logo" class="socialIcon">
+            <img src="./images/icons/logo-twitter.svg" alt="twitter logo" class="socialIcon">
         </div>
         
         <div class="copyrightArea">

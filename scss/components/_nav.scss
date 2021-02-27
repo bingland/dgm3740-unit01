@@ -1,0 +1,50 @@
+// global colors
+// $orange: #F69800;
+// $yellow: #F5FF3B;
+// $lightblue: #84A9C0;
+// $purple: #6A66A3;
+// $darkblue: #102E4A;
+
+nav {
+    background-color: $darkblue;
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+    height: 43px;
+    
+    .wrapper1200 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        ul {
+            display: flex;
+
+            li { 
+                padding: 10px;
+            }
+            li:hover { 
+                background-color: lighten($darkblue, 20%); 
+                cursor: pointer;
+            }
+        }
+
+        .navSearch {
+            padding: 3px 0;
+
+            input#searchBar {
+                border-radius: 3px;
+                border: none;
+                height: 37px;
+                padding: 5px;
+                margin: 0;
+            }
+            button {
+                height: 37px;
+                border: none;
+                img { max-width: 70%; }
+            }
+        }
+    }
+}
