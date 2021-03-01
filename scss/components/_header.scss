@@ -13,9 +13,11 @@ header {
         justify-content: space-between;
         align-items: flex-end;
 
-        img.logo {
-            width: 150px;
+        .logo {
             margin: 10px;
+            img {
+                width: 140px;
+            }
         }
         div.phone {
             font-size: 30px;
