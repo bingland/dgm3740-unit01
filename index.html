@@ -37,38 +37,51 @@
     </nav>
 
     <div class="wrapper1200">
-        <div class="sliderArea">
-            <!-- Slider Area -->
+        <div class="my_slider">
+            <div class="sliderImg">
+                <img src="https://via.placeholder.com/1000x500" alt="slider">
+            </div>
+            <div class="sliderImg">
+                <img src="https://via.placeholder.com/1000x500" alt="slider">
+            </div>
         </div>
     
         <main class="articleArea">
             <h2>Recent Blog Articles</h2>
 
             <div class="articles">
-                <div class="article">
-                    <div class="desc">Article title goes here and may also wrap two lines.</div>
-                    <div class="dateBox">
-                        <p class="date">May 1, 2021</p>
+                <a class="articleBackground" href="#">
+                    <div class="article">
+                        <div class="desc">Article title goes here and may also wrap two lines.</div>
+                        <div class="dateBox">
+                            <p class="date">May 1, 2021</p>
+                        </div>
                     </div>
-                </div>
-                <div class="article">
-                    <div class="desc">Article title goes here and may also wrap two lines.</div>
-                    <div class="dateBox">
-                        <p class="date">May 1, 2021</p>
+                </a>
+                <a class="articleBackground" href="#">
+                    <div class="article">
+                        <div class="desc">Article title goes here and may also wrap two lines.</div>
+                        <div class="dateBox">
+                            <p class="date">May 1, 2021</p>
+                        </div>
                     </div>
-                </div>
-                <div class="article">
-                    <div class="desc">Article title goes here and may also wrap two lines.</div>
-                    <div class="dateBox">
-                        <p class="date">May 1, 2021</p>
+                </a>
+                <a class="articleBackground" href="#">
+                    <div class="article">
+                        <div class="desc">Article title goes here and may also wrap two lines.</div>
+                        <div class="dateBox">
+                            <p class="date">May 1, 2021</p>
+                        </div>
                     </div>
-                </div>
-                <div class="article">
-                    <div class="desc">Article title goes here and may also wrap two lines.</div>
-                    <div class="dateBox">
-                        <p class="date">May 1, 2021</p>
+                </a>
+                <a class="articleBackground" href="#">
+                    <div class="article">
+                        <div class="desc">Article title goes here and may also wrap two lines.</div>
+                        <div class="dateBox">
+                            <p class="date">May 1, 2021</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             
         </main>
@@ -116,5 +129,22 @@
         </div>
 
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(() => {
+            $('.my_slider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 1000,
+                cssEase: 'ease-out',
+                autoplay: true,
+                autoplaySpeed: 30000
+            })
+        })
+    </script>
 </body>
 </html>

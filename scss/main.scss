@@ -6,7 +6,10 @@ $purple: #6A66A3;
 $darkblue: #102E4A;
 
 @import "reset";
+@import "../slick/slick-theme";
+@import "../slick/slick";
 @import "components/global";
+@import "components/slider";
 @import "components/header";
 @import "components/nav";
 @import "components/articleArea";
