@@ -324,7 +324,7 @@ main.articleArea .articles {
     background-color: red; }
     main.articleArea .articles .articleBackground .article {
       height: 280px;
-      background-color: rgba(173, 216, 230, 0.75);
+      background-color: rgba(173, 216, 230, 0.25);
       display: grid;
       align-content: end; }
       main.articleArea .articles .articleBackground .article .desc {

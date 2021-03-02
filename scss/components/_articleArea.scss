@@ -18,25 +18,46 @@ main.articleArea {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 20px;
 
-        .article {
-            height: 280px;
-            background-color: lightblue;
-            display: grid;
-            align-content: end;
+        .articleBackground {
+            text-decoration: none;
+            color: black;
+            background-color: red;
 
-            .desc {
-                padding: 5px;
-                font-style: italic;
-                text-align: center;
-            }
-            .dateBox {
-                padding: 8px;
-                background-color: $darkblue;
+            .article {
+                height: 280px;
+                background-color: rgba(173, 216, 230, 0.25);
+                display: grid;
+                align-content: end;
     
-                .date {
-                    color: white;
+                .desc {
+                    padding: 5px;
+                    font-style: italic;
+                    text-align: center;
+                }
+                .dateBox {
+                    padding: 8px;
+                    background-color: $darkblue;
+        
+                    .date {
+                        color: white;
+                    }
                 }
             }
+            .article:hover {
+                background-color: rgba(0, 0, 0, 0);
+            }
+        }
+        .articleBackground:nth-child(1) {
+            background-color: green;
+        }
+        .articleBackground:nth-child(2) {
+            background-color: yellow;
+        }
+        .articleBackground:nth-child(3) {
+            background-color: red;
+        }
+        .articleBackground:nth-child(4) {
+            background-color: blue;
         }
     }
     
