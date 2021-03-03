@@ -331,8 +331,11 @@ main.articleArea .articles {
       align-content: end; }
       main.articleArea .articles .articleBackground .article .desc {
         padding: 5px;
+        margin-bottom: 5px;
         font-style: italic;
-        text-align: center; }
+        text-align: center;
+        font-weight: bold;
+        color: white; }
       main.articleArea .articles .articleBackground .article .dateBox {
         padding: 8px;
         background-color: #102E4A; }
@@ -341,13 +344,25 @@ main.articleArea .articles {
     main.articleArea .articles .articleBackground .article:hover {
       background-color: rgba(0, 0, 0, 0); }
   main.articleArea .articles .articleBackground:nth-child(1) {
-    background-color: green; }
+    background-image: url("../../images/content/teasers/teaser1.jpg");
+    background-color: #84A9C0;
+    background-position: center top;
+    background-size: 100% auto; }
   main.articleArea .articles .articleBackground:nth-child(2) {
-    background-color: yellow; }
+    background-image: url("../../images/content/teasers/teaser2.jpg");
+    background-color: #84A9C0;
+    background-position: center top;
+    background-size: 100% auto; }
   main.articleArea .articles .articleBackground:nth-child(3) {
-    background-color: red; }
+    background-image: url("../../images/content/teasers/teaser3.jpg");
+    background-color: #84A9C0;
+    background-position: center top;
+    background-size: 100% auto; }
   main.articleArea .articles .articleBackground:nth-child(4) {
-    background-color: blue; }
+    background-image: url("../../images/content/teasers/teaser4.jpg");
+    background-color: #84A9C0;
+    background-position: center top;
+    background-size: 100% auto; }
 
 footer {
   margin-top: 20px;
