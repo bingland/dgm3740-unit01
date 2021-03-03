@@ -265,18 +265,20 @@ table {
   .my_slider .sliderImg img {
     width: 100%; }
 
-header .wrapper1200 {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end; }
-  header .wrapper1200 .logo {
-    margin: 10px; }
-    header .wrapper1200 .logo img {
-      width: 140px; }
-  header .wrapper1200 div.phone {
-    font-size: 30px;
-    font-weight: bold;
-    margin: 10px; }
+header {
+  background-color: white; }
+  header .wrapper1200 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+    header .wrapper1200 .logo {
+      margin: 10px; }
+      header .wrapper1200 .logo img {
+        width: 140px; }
+    header .wrapper1200 div.phone {
+      font-size: 30px;
+      font-weight: bold;
+      margin: 10px; }
 
 nav {
   background-color: #102E4A;
@@ -362,6 +364,8 @@ footer {
         font-weight: bold;
         font-size: 20px;
         padding: 10px 0; }
+      footer .mainFooter .wrapper1200 .contactUs a {
+        color: white; }
       footer .mainFooter .wrapper1200 .newsletter form input {
         width: 100%;
         margin: 3px 0;
@@ -379,6 +383,6 @@ footer {
   footer .copyrightArea {
     text-align: center; }
     footer .copyrightArea p {
-      padding: 5px; }
+      padding: 20px; }
 
 /*# sourceMappingURL=main.css.map */
