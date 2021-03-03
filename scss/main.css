@@ -350,15 +350,16 @@ main.articleArea .articles {
     background-color: blue; }
 
 footer {
-  margin-top: 20px; }
+  margin-top: 20px;
+  line-height: 1.2; }
   footer .mainFooter {
     background-color: #102E4A;
     color: white;
-    padding: 10px 0; }
+    padding: 10px 0 20px 0; }
     footer .mainFooter .wrapper1200 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 10px;
+      grid-gap: 40px;
       font-size: 18px; }
       footer .mainFooter .wrapper1200 h3 {
         font-weight: bold;
@@ -372,17 +373,28 @@ footer {
         padding: 5px;
         border-radius: 5px;
         border: 1px solid black; }
+      footer .mainFooter .wrapper1200 .newsletter p {
+        margin-bottom: 10px; }
   footer .footerIcons {
     text-align: center;
     background-color: #84A9C0;
     padding: 10px 0; }
-    footer .footerIcons img.socialIcon {
+    footer .footerIcons .socialIcon {
       max-width: 50px;
       max-height: 50px;
-      margin: 0 5px; }
+      margin: 0 5px;
+      background-color: #102E4A;
+      border-radius: 11px;
+      padding: 7px;
+      fill: white;
+      cursor: pointer; }
+    footer .footerIcons .socialIcon:hover {
+      background-color: #194874; }
   footer .copyrightArea {
     text-align: center; }
     footer .copyrightArea p {
       padding: 20px; }
+      footer .copyrightArea p a {
+        color: black; }
 
 /*# sourceMappingURL=main.css.map */
