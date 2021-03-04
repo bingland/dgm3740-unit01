@@ -38,22 +38,31 @@ nav {
                 display: grid;
                 grid-template-columns: 1fr;
                 position: relative;
+                width: 90.95px;
 
                 ul {
                     display: grid;
                     grid-template-columns: 1fr;
-                    background-color: $lightblue;
-                    z-index: 938249839408293849283482;
-                    position: absolute;
-                    height: 100px;
-                    top: 50px;
-                    left: 0;
-                    visibility: hidden;
+                    z-index: 99999;
+                    position: relative;
+                    top: 15px;
+                    left: -12px;
+                    width: 91px;
 
                     li {
+                        display: none;
+                        position: relative;
+                        z-index: 99999;
                         height: 50px;
+                        background-color: $lightblue;
+                    }
+                    li:hover {
+                        background-color: lightblue;
                     }
                 }
+            }
+            .dropdown:hover ul li {
+                display: block;
             }
         }
 
@@ -83,7 +92,7 @@ nav {
 }
 .mobileNav {
     display: none;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 110px 1fr;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
@@ -91,6 +100,7 @@ nav {
     .open {
         display: flex;
         width: auto; 
+        cursor: pointer;
 
         svg {
             max-width: 30px;
@@ -122,6 +132,26 @@ nav {
             top: 4px;
             position: relative;
         }
+    }
+}
+.hiddenNav {
+    background-color: $darkblue;
+    color: white;
+    font-size: 23px;
+    display: none;
+
+    ul li {
+        padding: 12px;
+        cursor: pointer;
+        border-top: 1px solid rgb(63, 63, 66);
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+    ul li:hover {
+        background-color: $lightblue;
     }
 }
 
