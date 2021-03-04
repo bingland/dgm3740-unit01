@@ -11,6 +11,18 @@
     <title>Cabot Cruizes</title>
 </head>
 <body>
+    <nav class="mobileNav">
+        <div class="open">
+            <svg class='ionicon' viewBox='0 0 512 512'><title>Menu</title><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' stroke-width='48' d='M88 152h336M88 256h336M88 360h336'/></svg>
+            <h3>OPEN</h3>
+        </div>
+        <div class="navSearch">
+            <input type="search" id="searchBar">
+            <button>
+                <svg width="20" height="20" viewBox="0 0 24 24"><path d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"/></svg>
+            </button>
+        </div>
+    </nav>
     <header>
         <div class="wrapper1200">
             <!-- <img src="https://via.placeholder.com/150"> -->
@@ -21,7 +33,7 @@
             <div class="phone"><a href="tel:123-456-7890">1-123-456-7890</a></div>
         </div>
     </header>
-    <nav>
+    <nav class="normalNav">
         <div class="wrapper1200">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -49,36 +61,36 @@
             <div class="sliderImg">
                 <picture>
                     <source srcset="images/content/slider/slider1-small.jpg"
-                    media="(max-width: 28.12rem)">
+                    media="(max-width: 450px)">
                     <source srcset="images/content/slider/slider1.jpg"
-                    media="(min-width: 28.12rem)">
+                    media="(min-width: 450px)">
                     <img src="images/content/slider/slider1.jpg" alt="slider picture 1">
                 </picture>
             </div>
             <div class="sliderImg">
                 <picture>
                     <source srcset="images/content/slider/slider2-small.jpg"
-                    media="(max-width: 28.12rem)">
+                    media="(max-width: 450px)">
                     <source srcset="images/content/slider/slider2.jpg"
-                    media="(min-width: 28.12rem)">
+                    media="(min-width: 450px)">
                     <img src="images/content/slider/slider2.jpg" alt="slider picture 2">
                 </picture>
             </div>
             <div class="sliderImg">
                 <picture>
                     <source srcset="images/content/slider/slider3-small.jpg"
-                    media="(max-width: 28.12rem)">
+                    media="(max-width: 450px)">
                     <source srcset="images/content/slider/slider3.jpg"
-                    media="(min-width: 28.12rem)">
+                    media="(min-width: 450px)">
                     <img src="images/content/slider/slider3.jpg" alt="slider picture 3">
                 </picture>
             </div>
             <div class="sliderImg">
                 <picture>
                     <source srcset="images/content/slider/slider4-small.jpg"
-                    media="(max-width: 28.12rem)">
+                    media="(max-width: 450px)">
                     <source srcset="images/content/slider/slider4.jpg"
-                    media="(min-width: 28.12rem)">
+                    media="(min-width: 450px)">
                     <img src="images/content/slider/slider4.jpg" alt="slider picture 4">
                 </picture>
             </div>
@@ -185,6 +197,6 @@
         })
     </script>
 
-    <script src="./js/main.js" type="module"></script>>
+    <script src="./js/main.js" type="module"></script>
 </body>
 </html>

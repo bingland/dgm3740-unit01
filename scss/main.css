@@ -274,9 +274,9 @@ header {
     header .wrapper1200 .logo {
       margin: 10px; }
       header .wrapper1200 .logo img {
-        width: 140px; }
+        width: 120px; }
     header .wrapper1200 div.phone {
-      font-size: 30px;
+      font-size: 25px;
       font-weight: bold;
       margin: 10px; }
       header .wrapper1200 div.phone a {
@@ -323,7 +323,8 @@ nav {
           nav .wrapper1200 ul .dropdown ul li {
             height: 50px; }
     nav .wrapper1200 .navSearch {
-      padding-bottom: 3px; }
+      padding-bottom: 3px;
+      margin-right: 10px; }
       nav .wrapper1200 .navSearch input#searchBar {
         border-radius: 3px;
         border: none;
@@ -337,6 +338,48 @@ nav {
         top: 3px;
         position: relative; }
 
+.normalNav {
+  display: block; }
+
+.mobileNav {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px; }
+  .mobileNav .open {
+    display: flex;
+    width: auto; }
+    .mobileNav .open svg {
+      max-width: 30px;
+      fill: white; }
+    .mobileNav .open h3 {
+      color: white;
+      padding: 2px;
+      padding-left: 5px; }
+  .mobileNav .navSearch {
+    text-align: right;
+    padding-bottom: 3px;
+    min-width: 182px; }
+    .mobileNav .navSearch input#searchBar {
+      border-radius: 3px;
+      border: none;
+      height: 37px;
+      padding: 5px;
+      margin: 0; }
+    .mobileNav .navSearch button {
+      height: 37px;
+      width: 37px;
+      border: none;
+      top: 4px;
+      position: relative; }
+
+@media only screen and (max-width: 641px) {
+  .normalNav {
+    display: none; }
+
+  .mobileNav {
+    display: grid; } }
 main.articleArea h2 {
   font-size: 32px;
   font-weight: bold;
@@ -348,7 +391,10 @@ main.articleArea .articles {
   main.articleArea .articles .articleBackground {
     text-decoration: none;
     color: black;
-    background-color: red; }
+    background-color: #84A9C0;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat; }
     main.articleArea .articles .articleBackground .article {
       height: 280px;
       background-color: rgba(173, 216, 230, 0.25);
@@ -370,33 +416,31 @@ main.articleArea .articles {
       transition: background-color 0.3s ease;
       background-color: rgba(0, 0, 0, 0); }
   main.articleArea .articles .articleBackground:nth-child(1) {
-    background-image: url("../../images/content/teasers/teaser1.jpg");
-    background-color: #84A9C0;
-    background-position: center top;
-    background-size: 100% auto; }
+    background-image: url("../../images/content/teasers/teaser1.jpg"); }
   main.articleArea .articles .articleBackground:nth-child(2) {
-    background-image: url("../../images/content/teasers/teaser2.jpg");
-    background-color: #84A9C0;
-    background-position: center top;
-    background-size: 100% auto; }
+    background-image: url("../../images/content/teasers/teaser2.jpg"); }
   main.articleArea .articles .articleBackground:nth-child(3) {
-    background-image: url("../../images/content/teasers/teaser3.jpg");
-    background-color: #84A9C0;
-    background-position: center top;
-    background-size: 100% auto; }
+    background-image: url("../../images/content/teasers/teaser3.jpg"); }
   main.articleArea .articles .articleBackground:nth-child(4) {
-    background-image: url("../../images/content/teasers/teaser4.jpg");
-    background-color: #84A9C0;
-    background-position: center top;
-    background-size: 100% auto; }
+    background-image: url("../../images/content/teasers/teaser4.jpg"); }
 
+@media only screen and (max-width: 1007px) {
+  main.articleArea .articles {
+    grid-template-columns: repeat(3, 1fr); }
+    main.articleArea .articles .articleBackground .article {
+      height: 240px; } }
+@media only screen and (max-width: 641px) {
+  main.articleArea .articles {
+    grid-template-columns: repeat(2, 1fr); }
+    main.articleArea .articles .articleBackground .article {
+      height: 220px; } }
 footer {
   margin-top: 40px;
   line-height: 1.2; }
   footer .mainFooter {
     background-color: #102E4A;
     color: white;
-    padding: 10px 0 20px 0; }
+    padding: 10px 15px 20px 15px; }
     footer .mainFooter .wrapper1200 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -437,5 +481,12 @@ footer {
       padding: 20px; }
       footer .copyrightArea p a {
         color: black; }
+
+@media only screen and (max-width: 1007px) {
+  footer .mainFooter .wrapper1200 {
+    grid-template-columns: repeat(2, 1fr); } }
+@media only screen and (max-width: 641px) {
+  footer .mainFooter .wrapper1200 {
+    grid-template-columns: 1fr; } }
 
 /*# sourceMappingURL=main.css.map */
