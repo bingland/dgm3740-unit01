@@ -10,7 +10,7 @@ nav {
     color: white;
     font-weight: bold;
     font-size: 23px;
-    height: 43px;
+    height: 50px;
     
     .wrapper1200 {
         display: flex;
@@ -20,18 +20,45 @@ nav {
 
         ul {
             display: flex;
+            height: 100%;
+            position: relative;
 
+            a {
+                color: white;
+                text-decoration: none;
+            }
             li { 
-                padding: 10px;
+                padding: 12px;
             }
             li:hover { 
                 background-color: lighten($darkblue, 20%); 
                 cursor: pointer;
             }
+            .dropdown {
+                display: grid;
+                grid-template-columns: 1fr;
+                position: relative;
+
+                ul {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    background-color: $lightblue;
+                    z-index: 938249839408293849283482;
+                    position: absolute;
+                    height: 100px;
+                    top: 50px;
+                    left: 0;
+                    visibility: hidden;
+
+                    li {
+                        height: 50px;
+                    }
+                }
+            }
         }
 
         .navSearch {
-            padding: 3px 0;
+            padding-bottom: 3px;
 
             input#searchBar {
                 border-radius: 3px;
@@ -42,8 +69,14 @@ nav {
             }
             button {
                 height: 37px;
+                width: 37px;
                 border: none;
-                img { max-width: 70%; }
+                top: 3px;
+                position: relative;
+
+                svg { 
+                    
+                }
             }
         }
     }

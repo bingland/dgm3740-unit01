@@ -39,7 +39,7 @@ main.articleArea {
                 }
                 .dateBox {
                     padding: 8px;
-                    background-color: $darkblue;
+                    background-color: rgba(16, 46, 74, 0.75);
         
                     .date {
                         color: white;
@@ -47,6 +47,7 @@ main.articleArea {
                 }
             }
             .article:hover {
+                transition: background-color 0.3s ease;
                 background-color: rgba(0, 0, 0, 0);
             }
         }
