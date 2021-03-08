@@ -39,14 +39,17 @@ nav {
                 grid-template-columns: 1fr;
                 position: relative;
                 width: 90.95px;
+                height: 100%;
+                margin: 0;
+                li { height: 100%; }
 
-                ul {
+                .subNav {
                     display: grid;
                     grid-template-columns: 1fr;
                     z-index: 99999;
-                    position: relative;
-                    top: 15px;
-                    left: -12px;
+                    position: absolute;
+                    top: 50px;
+                    //left: -12px;
                     width: 91px;
 
                     li {
@@ -61,7 +64,7 @@ nav {
                     }
                 }
             }
-            .dropdown:hover ul li {
+            .dropdown:hover div li {
                 display: block;
             }
         }
@@ -70,7 +73,7 @@ nav {
             padding-bottom: 3px;
             margin-right: 10px;
 
-            input#searchBar {
+            input.searchBar {
                 border-radius: 3px;
                 border: none;
                 height: 37px;
@@ -118,7 +121,7 @@ nav {
         padding-bottom: 3px;
         min-width: 182px;
 
-        input#searchBar {
+        input.searchBar {
             border-radius: 3px;
             border: none;
             height: 37px;

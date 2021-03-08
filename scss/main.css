@@ -310,29 +310,32 @@ nav {
         display: grid;
         grid-template-columns: 1fr;
         position: relative;
-        width: 90.95px; }
-        nav .wrapper1200 ul .dropdown ul {
+        width: 90.95px;
+        height: 100%;
+        margin: 0; }
+        nav .wrapper1200 ul .dropdown li {
+          height: 100%; }
+        nav .wrapper1200 ul .dropdown .subNav {
           display: grid;
           grid-template-columns: 1fr;
           z-index: 99999;
-          position: relative;
-          top: 15px;
-          left: -12px;
+          position: absolute;
+          top: 50px;
           width: 91px; }
-          nav .wrapper1200 ul .dropdown ul li {
+          nav .wrapper1200 ul .dropdown .subNav li {
             display: none;
             position: relative;
             z-index: 99999;
             height: 50px;
             background-color: #84A9C0; }
-          nav .wrapper1200 ul .dropdown ul li:hover {
+          nav .wrapper1200 ul .dropdown .subNav li:hover {
             background-color: lightblue; }
-      nav .wrapper1200 ul .dropdown:hover ul li {
+      nav .wrapper1200 ul .dropdown:hover div li {
         display: block; }
     nav .wrapper1200 .navSearch {
       padding-bottom: 3px;
       margin-right: 10px; }
-      nav .wrapper1200 .navSearch input#searchBar {
+      nav .wrapper1200 .navSearch input.searchBar {
         border-radius: 3px;
         border: none;
         height: 37px;
@@ -369,7 +372,7 @@ nav {
     text-align: right;
     padding-bottom: 3px;
     min-width: 182px; }
-    .mobileNav .navSearch input#searchBar {
+    .mobileNav .navSearch input.searchBar {
       border-radius: 3px;
       border: none;
       height: 37px;
@@ -403,49 +406,51 @@ nav {
 
   .mobileNav {
     display: grid; } }
-main.articleArea h2 {
-  font-size: 32px;
-  font-weight: bold;
-  padding: 10px 0; }
-main.articleArea .articles {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px; }
-  main.articleArea .articles .articleBackground {
-    text-decoration: none;
-    color: black;
-    background-color: #84A9C0;
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat; }
-    main.articleArea .articles .articleBackground .article {
-      height: 280px;
-      background-color: rgba(173, 216, 230, 0.25);
-      display: grid;
-      align-content: end; }
-      main.articleArea .articles .articleBackground .article .desc {
-        padding: 5px;
-        margin-bottom: 5px;
-        font-style: italic;
-        text-align: center;
-        font-weight: bold;
-        color: white; }
-      main.articleArea .articles .articleBackground .article .dateBox {
-        padding: 8px;
-        background-color: rgba(16, 46, 74, 0.75); }
-        main.articleArea .articles .articleBackground .article .dateBox .date {
+main.articleArea {
+  padding: 0 15px; }
+  main.articleArea h2 {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px 0; }
+  main.articleArea .articles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; }
+    main.articleArea .articles .articleBackground {
+      text-decoration: none;
+      color: black;
+      background-color: #84A9C0;
+      background-position: center top;
+      background-size: cover;
+      background-repeat: no-repeat; }
+      main.articleArea .articles .articleBackground .article {
+        height: 280px;
+        background-color: rgba(173, 216, 230, 0.25);
+        display: grid;
+        align-content: end; }
+        main.articleArea .articles .articleBackground .article .desc {
+          padding: 5px;
+          margin-bottom: 5px;
+          font-style: italic;
+          text-align: center;
+          font-weight: bold;
           color: white; }
-    main.articleArea .articles .articleBackground .article:hover {
-      transition: background-color 0.3s ease;
-      background-color: rgba(0, 0, 0, 0); }
-  main.articleArea .articles .articleBackground:nth-child(1) {
-    background-image: url("../../images/content/teasers/teaser1.jpg"); }
-  main.articleArea .articles .articleBackground:nth-child(2) {
-    background-image: url("../../images/content/teasers/teaser2.jpg"); }
-  main.articleArea .articles .articleBackground:nth-child(3) {
-    background-image: url("../../images/content/teasers/teaser3.jpg"); }
-  main.articleArea .articles .articleBackground:nth-child(4) {
-    background-image: url("../../images/content/teasers/teaser4.jpg"); }
+        main.articleArea .articles .articleBackground .article .dateBox {
+          padding: 8px;
+          background-color: rgba(16, 46, 74, 0.75); }
+          main.articleArea .articles .articleBackground .article .dateBox .date {
+            color: white; }
+      main.articleArea .articles .articleBackground .article:hover {
+        transition: background-color 0.3s ease;
+        background-color: rgba(0, 0, 0, 0); }
+    main.articleArea .articles .articleBackground:nth-child(1) {
+      background-image: url("../../images/content/teasers/teaser1.jpg"); }
+    main.articleArea .articles .articleBackground:nth-child(2) {
+      background-image: url("../../images/content/teasers/teaser2.jpg"); }
+    main.articleArea .articles .articleBackground:nth-child(3) {
+      background-image: url("../../images/content/teasers/teaser3.jpg"); }
+    main.articleArea .articles .articleBackground:nth-child(4) {
+      background-image: url("../../images/content/teasers/teaser4.jpg"); }
 
 @media only screen and (max-width: 1007px) {
   main.articleArea .articles {
