@@ -294,43 +294,43 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 100%; }
-    nav .wrapper1200 ul {
+    nav .wrapper1200 .ul {
       display: flex;
       height: 100%;
       position: relative; }
-      nav .wrapper1200 ul a {
+      nav .wrapper1200 .ul a {
         color: white;
         text-decoration: none; }
-      nav .wrapper1200 ul li {
+      nav .wrapper1200 .ul .li {
         padding: 12px; }
-      nav .wrapper1200 ul li:hover {
+      nav .wrapper1200 .ul .li:hover {
         background-color: #22629e;
         cursor: pointer; }
-      nav .wrapper1200 ul .dropdown {
+      nav .wrapper1200 .ul .dropdown {
         display: grid;
         grid-template-columns: 1fr;
         position: relative;
         width: 90.95px;
         height: 100%;
         margin: 0; }
-        nav .wrapper1200 ul .dropdown li {
+        nav .wrapper1200 .ul .dropdown .li {
           height: 100%; }
-        nav .wrapper1200 ul .dropdown .subNav {
+        nav .wrapper1200 .ul .dropdown .subNav {
           display: grid;
           grid-template-columns: 1fr;
           z-index: 99999;
           position: absolute;
           top: 50px;
           width: 91px; }
-          nav .wrapper1200 ul .dropdown .subNav li {
+          nav .wrapper1200 .ul .dropdown .subNav .li {
             display: none;
             position: relative;
             z-index: 99999;
             height: 50px;
             background-color: #84A9C0; }
-          nav .wrapper1200 ul .dropdown .subNav li:hover {
+          nav .wrapper1200 .ul .dropdown .subNav .li:hover {
             background-color: lightblue; }
-      nav .wrapper1200 ul .dropdown:hover div li {
+      nav .wrapper1200 .ul .dropdown:hover div .li {
         display: block; }
     nav .wrapper1200 .navSearch {
       padding-bottom: 3px;
@@ -390,14 +390,14 @@ nav {
   color: white;
   font-size: 23px;
   display: none; }
-  .hiddenNav ul li {
+  .hiddenNav .ul .li {
     padding: 12px;
     cursor: pointer;
     border-top: 1px solid #3f3f42; }
-    .hiddenNav ul li a {
+    .hiddenNav .ul .li a {
       color: white;
       text-decoration: none; }
-  .hiddenNav ul li:hover {
+  .hiddenNav .ul .li:hover {
     background-color: #84A9C0; }
 
 @media only screen and (max-width: 641px) {
